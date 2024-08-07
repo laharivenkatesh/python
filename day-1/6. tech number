@@ -1,0 +1,23 @@
+tech number
+
+program:
+
+num = int(input("Enter a number: "))
+num_str = str(num)
+length = len(num_str)
+if length % 2 != 0:
+    print(num, "is not a Tech Number.")
+else:
+    half_length = length // 2
+    first_half = int(num_str[:half_length])
+    second_half = int(num_str[half_length:])
+    result = (first_half + second_half) ** 2     
+    if result == num:
+        print(num, "is a Tech Number.")
+    else:
+        print(num, "is not a Tech Number.")
+
+
+OUTPUT:
+Enter a number: 2025
+2025 is a Tech Number.
