@@ -1,0 +1,16 @@
+find the lenght of the last word in the sentence
+
+program:
+
+def length_of_last_word(sentence):
+    words = sentence.split()
+    if words:
+        return len(words[-1])
+    return 0
+sentence = "lahari venkatesh"
+length = length_of_last_word(sentence)
+print(f"The length of the last word in the sentence is: {length}")
+
+
+output:
+the no letters in last word is = 8
