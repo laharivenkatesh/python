@@ -1,0 +1,10 @@
+min and max between three numbers 
+program:
+
+a=1,b=3,c=7
+print(max(a,b,c))
+print(min(a,b,c))
+
+output:
+min=1
+max=7
