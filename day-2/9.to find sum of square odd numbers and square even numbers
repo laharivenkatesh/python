@@ -1,0 +1,18 @@
+to find sum of square odd numbers and square even numbers
+
+program:
+
+def sum_squares_even_odd(numbers):
+    even_sum = sum(num**2 for num in numbers if num % 2 == 0)
+    odd_sum = sum(num**2 for num in numbers if num % 2 != 0)
+    return even_sum, odd_sum
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_sum, odd_sum = sum_squares_even_odd(numbers)
+print(f"Sum of squares of even numbers: {even_sum}")
+print(f"Sum of squares of odd numbers: {odd_sum}")
+
+ output:
+ Sum of squares of even numbers: 220
+Sum of squares of odd numbers: 165
+
