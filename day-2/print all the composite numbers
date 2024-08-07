@@ -1,0 +1,22 @@
+print all the composite numbers 
+program:
+def is_composite(n):
+    return n > 1 and any(n % i == 0 for i in range(2, int(n ** 0.5) + 1))
+
+def print_composite_numbers(start, end):
+    for num in range(start, end + 1):
+        if is_composite(num):
+            print(num)
+start = 10
+end = 20
+print_composite_numbers(start, end)
+
+output :
+10
+12
+14
+15
+16
+18
+20
+
