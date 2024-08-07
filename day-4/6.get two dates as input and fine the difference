@@ -1,0 +1,17 @@
+get two dates as input and fine the difference
+
+program:
+
+from datetime import datetime
+
+def date_difference(date1, date2):
+    date_format = "%Y-%m-%d"
+    diff = datetime.strptime(date1, date_format) - datetime.strptime(date2, date_format)
+    return abs(diff.days)
+
+date1 = "2022-12-31"
+date2 = "2022-01-01"
+print(date_difference(date1, date2))  
+
+
+Output: 364
