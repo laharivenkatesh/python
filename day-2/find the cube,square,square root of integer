@@ -1,0 +1,19 @@
+find the cube,square,square root of integer
+program:
+import math 
+def calculate_values(numbers):
+result={}
+for num in numbers:
+square=num**2
+cube=num**3
+square_root=math.sqrt(num)
+results[num]=(square,cube,square_root)
+reutrn results
+num[9,4,16]
+for num (square,cube,square_root) in results.items():
+print({num},{square},{cube},{square_root})
+
+output:
+4,16,64,2
+9,81,729,3
+16,256,4096,4
