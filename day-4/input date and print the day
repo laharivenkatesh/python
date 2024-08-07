@@ -1,0 +1,11 @@
+date to day
+program:
+
+import datetime
+d="12-01-2024"
+day=datetime.datetime.strptime(d,"%d-%m-%Y")
+day1=day.strftime("%A)
+print("Day:",day1)
+
+OUTPUT:
+Day: Friday
