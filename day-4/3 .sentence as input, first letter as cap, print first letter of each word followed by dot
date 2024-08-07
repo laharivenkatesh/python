@@ -1,0 +1,15 @@
+sentence as input, first letter as cap, print first letter of each word followed by dot
+program:
+
+s=" lahari venkatesh "
+print("Original:",s)
+a=s.title()
+print("After Capitalize:",a)
+b=a.split()
+c='.'.join(word[0] for word in b)
+print(c)
+
+OUTPUT:
+Original: lahari venkatesh
+After Capitalize: Lahari Venkatesh
+L.V
