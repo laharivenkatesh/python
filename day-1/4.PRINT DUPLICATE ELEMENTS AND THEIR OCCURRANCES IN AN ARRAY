@@ -1,0 +1,23 @@
+PRINT DUPLICATE ELEMENTS AND THEIR OCCURRANCES IN AN ARRAY
+
+
+program:
+
+arr = [1, 2, 3, 2, 4, 5, 6, 1, 7, 8, 6, 6, 9, 10, 2]
+element_count = {}
+for element in arr:
+    if element in element_count:
+        element_count[element] += 1
+    else:
+        element_count[element] = 1
+print("Duplicate elements and their occurrences:")
+for element, count in element_count.items():
+    if count > 1:
+        print("Element", element, "occurs", count, "times")
+
+
+OUTPUT:
+Duplicate elements and their occurrences:
+Element 1 occurs 2 times
+Element 2 occurs 3 times
+Element 6 occurs 3 times
