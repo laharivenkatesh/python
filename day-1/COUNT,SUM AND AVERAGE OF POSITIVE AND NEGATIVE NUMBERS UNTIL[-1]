@@ -1,0 +1,44 @@
+COUNT,SUM AND AVERAGE OF POSITIVE AND NEGATIVE NUMBERS
+program:
+
+positive_count = 0
+negative_count = 0
+positive_sum = 0
+negative_sum = 0
+num=int(input("Enter numbers (enter -1 to stop):")
+while num != -1:
+    if num > 0:
+        positive_count += 1
+        positive_sum += num
+    elif num < 0:
+        negative_count += 1
+        negative_sum += num
+    num = int(input("Enter numbers(enter -1 to stop):")
+if positive_count > 0:
+    positive_avg = positive_sum / positive_count
+else:
+    positive_avg = 0
+if negative_count > 0:
+    negative_avg = negative_sum / negative_count
+else:
+    negative_avg = 0
+print("Number of positive numbers:", positive_count)
+print("Sum of positive numbers:", positive_sum)
+print("Average of positive numbers:", positive_avg)
+print("Number of negative numbers:", negative_count)
+print("Sum of negative numbers:", negative_sum)
+print("Average of negative numbers:", negative_avg)
+
+
+OUTPUT:
+Enter numbers (enter -1 to stop):2
+Enter numbers(enter -1 to stop):3
+Enter numbers(enter -1 to stop):-5
+Enter numbers(enter -1 to stop):-4
+Enter numbers(enter -1 to stop):-1
+Number of positive numbers: 2
+Sum of positive numbers: 5
+Average of positive numbers: 2.5
+Number of negative numbers: 2
+Sum of negative numbers: -9
+Average of negative numbers: -4.5
