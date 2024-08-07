@@ -1,0 +1,10 @@
+
+program:
+
+s = "Hi lahari"
+print(s.upper(), s.lower(), len(s.split(" ")), len([x for x in s.split(" ") if x[0].lower() == "a"]))
+
+output:
+HI LAHARI
+hi lahari
+2
