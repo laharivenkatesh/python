@@ -1,0 +1,16 @@
+1.check the string isogram or not
+
+program:
+
+def is_isogram(s):
+    return len(s) == len(set(s))
+
+# Test the function
+input_string = "laven"
+if is_isogram(input_string):
+    print(f"{input_string} is an isogram.")
+else:
+    print(f"{input_string} is not an isogram.")
+
+  output:
+laven is an isogram.
