@@ -1,0 +1,15 @@
+perfect square or not
+
+program:
+
+import math
+number = 25  
+sqrt_number = math.sqrt(number)
+if sqrt_number.is_integer():
+    print(number,"is a perfect square.")
+else:
+    print(number,"is not a perfect square.")
+
+
+OUTPUT:
+25 is a perfect square.
