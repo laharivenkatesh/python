@@ -1,0 +1,15 @@
+SUM OF DIGIT UNTIL NUMBER BECOME SINGLE DIGIT
+program:
+
+number = 1234
+while number >= 10:
+    total = 0
+    n = number
+    while n > 0:
+        total += n % 10
+        n //= 10
+    number = total
+print(number)
+
+output:
+1
