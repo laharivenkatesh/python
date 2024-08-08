@@ -1,0 +1,16 @@
+find the missing letters from pangram and print the missing letters
+
+program:
+
+import string
+def find_missing_letters(pangram):
+    alphabet_set = set(string.ascii_lowercase)
+    pangram_set = set(pangram.lower())
+    missing_letters = alphabet_set - pangram_set
+    return missing_letters
+pangram = "The uick brown fox umps over the lazy dog"
+missing = find_missing_letters(pangram)
+print("Missing letters:", missing)
+
+output:
+missing letters:{j},{b}
