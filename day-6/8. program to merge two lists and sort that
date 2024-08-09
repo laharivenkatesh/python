@@ -1,0 +1,11 @@
+program to merge two lists and sort that
+
+program:
+l_1=[3,,4,1,1]
+l_2=[5,9,2,6]
+mergerd_list=l_1+l_2
+sorted_list=sorted(merged_list)
+print("merged list",sorted_list
+
+output:
+merged list:[1,1,2,3,4,5,6,9]
