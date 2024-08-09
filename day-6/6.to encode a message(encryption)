@@ -1,0 +1,21 @@
+to encode a message(encryption)
+program:
+
+message = "hello world"
+shift = 3
+encoded_message = ""
+for char in message:
+   if char.isalpha():
+    start = ord('A') if char.isupper() else ord('a')
+   shifted = (ord(char) - start + shift) % 26
+   encoded_char = chr(start + shifted)
+   encoded_message += encoded_char
+else:
+  encoded_message += char
+print("original message:", message)
+print("encoded message:", encoded_message)
+
+
+output:
+original message = hello world
+encoded message = khoor zruog
