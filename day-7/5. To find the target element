@@ -1,0 +1,19 @@
+target element
+program:
+
+def find_indices(arr, target):
+    start = end = -1
+    for i in range(len(arr)):
+        if arr[i] == target:
+            if start == -1:
+                start = i
+            end = i
+    return start, end
+
+arr = [1, 2, 5, 2, 4, 2, 5]
+target = 5 
+print(find_indices(arr, target))
+
+
+OUTPUT:
+(2, 6)
