@@ -1,0 +1,13 @@
+isomorphic or not 
+program:
+
+def are_isomorphic(str1, str2):
+    return len(str1) == len(str2) and len(set(zip(str1, str2))) == len(set(str1)) == len(set(str2))
+
+str1 = "foo"
+str2 = "bar"
+print(are_isomorphic(str1, str2))   
+
+
+OUTPUT:
+False
