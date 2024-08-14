@@ -1,0 +1,12 @@
+from collections import Counter
+
+  program:
+  
+  fruits = ['apple', 'banana', 'apple', 'orange', 'apple', 'banana']
+
+frequency = Counter(fruits)
+print(frequency)
+
+    
+OUTPUT:
+Counter({'apple': 3, 'banana': 2, 'orange': 1})
