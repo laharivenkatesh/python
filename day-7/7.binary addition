@@ -1,0 +1,11 @@
+binary addition
+
+program:
+def binary_addition(bin1, bin2):
+    sum_bin = bin(int(bin1, 2) + int(bin2, 2))
+    return sum_bin[2:]  # Remove the '0b' prefix
+result = binary_addition('1010', '1101')
+print(f"The sum of binary 1010 and 1101 is: {result}")
+
+output
+10111
