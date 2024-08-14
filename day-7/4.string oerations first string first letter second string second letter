@@ -1,0 +1,14 @@
+string oerations first string first letter second string second letter 
+program:
+
+str1 = "Hello"
+str2 = "World"
+ 
+for i in range(max(len(str1), len(str2))):
+    if i < len(str1):
+        print(str1[i], end=' ')
+    if i < len(str2):
+        print(str2[i], end=' ')
+
+OUTPUT:
+H W e o l r l l o d 
