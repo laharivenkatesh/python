@@ -1,0 +1,33 @@
+6.uppercase ,lowercase,digits until *
+
+program:
+
+def count_chars():
+    upper = lower = digits = 0
+    while True:
+        char = input("Enter a character (* to stop): ")
+        if char == '*':
+            break
+        elif char.isupper():
+            upper += 1
+        elif char.islower():
+            lower += 1
+        elif char.isdigit():Lowercase letters: 2
+Digits: 3
+            digits += 1
+    print(f"Uppercase letters: {upper}")
+    print(f"Lowercase letters: {lower}")
+    print(f"Digits: {digits}")
+count_chars()
+
+OUTPUT:
+Enter a character (* to stop): A
+Enter a character (* to stop): s
+Enter a character (* to stop): 5
+Enter a character (* to stop): H
+Enter a character (* to stop): 8
+Enter a character (* to stop): u
+Enter a character (* to stop): *
+Uppercase letters: 2
+Lowercase letters: 2
+Digits: 2
