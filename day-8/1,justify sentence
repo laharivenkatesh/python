@@ -1,0 +1,20 @@
+Take the sentence as input, align justified left align, right align
+program:
+
+def justify_text(sentence, width=50):
+    left_aligned = sentence.ljust(width)
+    right_aligned = sentence.rjust(width)
+    return left_aligned, right_aligned
+
+input_sentence = input("Enter a sentence: ")
+left, right = justify_text(input_sentence)
+
+print("Left Aligned:\n", left)
+print("Right Aligned:\n", right)
+
+Output:
+Enter a sentence:  lahari venkatesh yegi
+Left Aligned:
+ lahari yegi                                          
+Right Aligned:
+                                            lahari yegi
