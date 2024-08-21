@@ -1,0 +1,24 @@
+find the maximum total from top to bottom of the triangle given below
+ program:
+ def max_total(triangle):
+    dp = [row[:] for row in triangle]
+    
+    
+    for row in range(len(dp) - 2, -1, -1):
+        for col in range(len(dp[row])):
+            dp[row][col] += max(dp[row + 1][col], dp[row + 1][col + 1])
+    
+    return dp[0][0]
+
+
+triangle = [
+    [2],
+    [3, 4],
+    [6, 5, 7],
+    [4, 1, 8, 3]
+]
+
+print(f"The maximum total from top to bottom is {max_total(triangle)}")
+
+output:
+The maximum total from top to bottom is 21
