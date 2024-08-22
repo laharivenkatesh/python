@@ -1,0 +1,18 @@
+ Character Frequency Replacement
+program:
+
+def char_frequency(string):
+    frequency = {char:string.count(char) for char in set(string) if char.isalpha()}
+    new_string = ''.join(
+        chr((ord(char) - ord('a') + frequency[char]) % 26 + ord('a')) if char.islower() else
+        chr((ord(char) - ord('A') + frequency[char]) % 26 + ord('A')) if char.isupper() else
+        char
+        for char in string
+    )
+    
+    return new_string
+string = "lahari"
+print(char_frequency(string))
+
+output:
+mcicsj
