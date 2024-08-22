@@ -1,0 +1,11 @@
+Sum of multiples of 3 or 5 below 500
+
+program:
+def find_sum_of_multiples(limit):
+    return sum(x for x in range(limit) if x % 3 == 0 or x % 5 == 0)
+
+result = find_sum_of_multiples(500)
+print(result)
+
+ output:
+ 57918
