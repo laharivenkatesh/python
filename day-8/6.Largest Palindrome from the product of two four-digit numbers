@@ -1,0 +1,23 @@
+Largest Palindrome from the product of two four-digit numbers
+ program:
+ 
+def is_palindrome(number):
+    s = str(number)
+    return s == s[::-1]
+def product_and_check():
+    num1 = 9999
+    num2 = 9991
+     product = num1 * num2
+    if is_palindrome(product):
+        return product
+    else:
+        return None
+result = product_and_check()
+if result:
+    print(f"The product of 9999 and 9991 is {result}, and it is a palindrome.")
+else:
+    print("The product is not a palindrome.")
+
+    output:
+
+    is a palindrome
