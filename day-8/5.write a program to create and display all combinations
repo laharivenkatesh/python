@@ -1,0 +1,14 @@
+ write a program to create and display all combinations
+ program:
+from itertools import product
+list1 = ['a', 'b']
+list2 = ['c', 'd']
+combinations = product(list1, list2)
+for combo in combinations:
+    print(''.join(combo))
+
+output:
+ac
+ad
+bc
+bd
