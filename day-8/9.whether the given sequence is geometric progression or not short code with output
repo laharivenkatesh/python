@@ -1,0 +1,19 @@
+whether the given sequence is geometric progression or not short code with output
+program:
+
+def printGP(a, r, n): 
+	for i in range(0, n): 
+		curr_term = a * pow(r, i)
+		print(curr_term, end =" ")
+
+a = 2 
+r = 3 
+n = 5 
+
+printGP(a, r, n) 
+
+
+
+Output:
+
+2 6 18 54 162 
