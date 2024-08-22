@@ -1,0 +1,19 @@
+find maxximum total from top to bottom of triangle
+program:
+def max_path_sum(triangle):
+    for row in range(len(triangle) - 2, -1, -1):
+        for col in range(len(triangle[row])):
+            triangle[row][col] += max(triangle[row + 1][col], triangle[row + 1][col + 1])
+    return triangle[0][0]
+
+triangle = [
+    [3],
+    [4, 6],
+    [2, 7, 6],
+    [8, 5, 9, 3]
+]
+
+result = max_path_sum(triangle)
+print(result)  
+
+Output: 30
